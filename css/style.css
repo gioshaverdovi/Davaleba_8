@@ -34,13 +34,14 @@ body {
     border-top: 16px solid;
     width: 80px;
     height: 80px;
-    -webkit-animation: cre 2s linear infinite;
-    animation: cre 2s linear infinite;
+    animation: cre 3s linear infinite;
 }
 @keyframes cre {
   0% { transform: rotate(0deg); color: red; }
-  50% {transform: rotate(180deg); color: green; }
-  100% {transform: rotate(360deg); color: yellow; }
+  25% { transform: rotate(90deg); color: green; }
+  50% { transform: rotate(180deg); color: yellow; }
+  75% {transform: rotate(270deg); color: blue; }
+  100% {transform: rotate(360deg); color: red; }
 }
 .fb{
 	width: 50px;
