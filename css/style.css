@@ -42,3 +42,21 @@ body {
   50% {transform: rotate(180deg); color: green; }
   100% {transform: rotate(360deg); color: yellow; }
 }
+.fb{
+	width: 50px;
+	height: 50px;
+	background-image: url(../photo/fb.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition-property: background-image;
+	transition-duration: 0.5s;
+	-webkit-animation: f 2s linear infinite;
+    animation: f 2s linear infinite;
+}
+.fb:hover {
+	background-image: url(../photo/fbgreen.png);
+}
+@keyframes f {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
