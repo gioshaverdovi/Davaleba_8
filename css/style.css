@@ -48,15 +48,10 @@ body {
 	background-image: url(../photo/fb.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	transition-property: background-image;
-	transition-duration: 0.5s;
-	-webkit-animation: f 2s linear infinite;
-    animation: f 2s linear infinite;
+	transition-property: background-image rotate;
+	transition-duration: 1s;
 }
 .fb:hover {
 	background-image: url(../photo/fbgreen.png);
-}
-@keyframes f {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(360deg);}
+	transform: rotate(360deg);
 }
