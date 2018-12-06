@@ -1,0 +1,44 @@
+body, html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-image: url(../photo/surati.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.D_B {
+	display: inline-block;
+}
+.nav li {
+	margin-left: 60px;
+	margin-top: 60px;
+}
+.list {
+	font-size: 40px;
+	color: #603a90;
+	transition-property: color text-shadow;
+	transition-duration: 0.5s;
+}
+.list:hover {
+	color: red;
+	text-shadow: 2px 2px 8px #fff;
+	transform: scale(1.1);
+
+}
+.loader {
+	margin-left: 30px;
+	margin-top: 30px;
+    border: 16px solid #fff;
+    border-radius: 50%;
+    border-top: 16px solid;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: cre 2s linear infinite;
+    animation: cre 2s linear infinite;
+}
+@keyframes cre {
+  0% { transform: rotate(0deg); color: red; }
+  50% {transform: rotate(180deg); color: green; }
+  100% {transform: rotate(360deg); color: yellow; }
+}
