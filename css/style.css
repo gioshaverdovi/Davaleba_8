@@ -243,3 +243,13 @@ body {
   border-radius: 50%;
   transition-delay: 0.2s;
 }
+.d {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+.d1 {
+  border: 20px solid blue;
+  border-radius: 100%;
+  border-right-color: #000;
+}
