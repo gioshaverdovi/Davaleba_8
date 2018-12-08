@@ -11,8 +11,8 @@ body {
 	display: inline-block;
 }
 .nav li {
-	margin-left: 60px;
-	margin-top: 60px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 .list {
 	font-size: 40px;
@@ -185,4 +185,46 @@ body {
 }
 .iconhtml:hover .play {
     opacity: 1;
+}
+.oribox {
+    padding: 10px;
+    background: gray;
+}
+.box {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 5px;
+    transition-duration: 0.7s;
+}
+.box img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    transition-property: width;
+    transition-duration: 0.7s;
+}
+.box p {
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    top: 70%;
+    color: #000;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.box:hover {
+    background-color: #000;
+}
+.box:hover img {
+    width: 70px;
+}
+.box:hover p {
+    font-size: 25px;
+    color: #2a2c92;
 }
