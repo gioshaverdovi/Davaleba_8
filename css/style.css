@@ -214,12 +214,12 @@ body {
     top: 70%;
     color: #000;
     white-space: nowrap;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg);
     transition-property: all;
     transition-duration: 0.7s;
 }
 .box:hover {
-    background-color: #000;
+    background-color: #231e1e;
 }
 .box:hover img {
     width: 70px;
@@ -227,4 +227,13 @@ body {
 .box:hover p {
     font-size: 25px;
     color: #2a2c92;
+    animation: zzz 0.3s;
+}
+@keyframes zzz {
+    0% {transform: translate(-50%, -50%) rotate(0deg);}
+    20% {transform: translate(-50%, -50%) rotate(-30deg);}
+    40% {transform: translate(-50%, -50%) rotate(30deg);}
+    60% {transform: translate(-50%, -50%) rotate(-30deg);}
+    80% {transform: translate(-50%, -50%) rotate(30deg);}
+    100% {transform: translate(-50%, -50%) rotate(0deg);}
 }
